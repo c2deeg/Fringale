@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:id="@+id/linmain"
+    android:background="@color/white">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_weight="0.4">
+        <ImageView
+            android:id="@+id/imgrestaurant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/momos"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_favorite_border_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Momos"
+            android:textColor="@color/white"
+            android:background="#00000080"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp">
+        <TextView
+            android:id="@+id/tvrestaurantname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Katani Dhaba"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_medium"/>
+        <TextView
+            android:id="@+id/tvrating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4.0(1k+) 23 mins"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/star2"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <TextView
+            android:id="@+id/tvrestauranttype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="North indian cheese"
+            android:textColor="#9F9F9F"
+            android:textSize="16sp"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/poppins_regular"/>
+        <TextView
+            android:id="@+id/tvlocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Model town 23km"
+            android:textColor="#9F9F9F"
+            android:textSize="16sp"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/poppins_regular"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

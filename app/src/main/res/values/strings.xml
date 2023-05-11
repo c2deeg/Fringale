@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Fringale</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="map_key" translatable="false">AIzaSyBJWyb9DIOOi9_Bx9MrSiRhNDtszhZqPD0</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="shortbread">Shortbread, chocolate turtle cookies, and red velvet.</string>
+    <string name="dotline">- - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - </string>
+
+
+</resources>

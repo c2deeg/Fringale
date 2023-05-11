@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Fragments.LoginFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="35dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back_24"
+                app:tint="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Enter your mobile number to \nget otp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:textSize="16sp"
+               />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                app:ccp_showFullName="false"
+                app:ccp_showPhoneCode="true"
+                app:ccpDialog_backgroundColor="@color/white"
+                android:background="@drawable/roundcornerstroke"
+                app:ccpDialog_textColor="@color/black"
+                app:ccp_showNameCode="true"
+                app:ccp_textSize="14sp"
+                app:ccp_textGravity="LEFT"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundcornerstroke"
+                android:hint="Enter Phone Number"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColorHint="@color/greycolor"
+                android:singleLine="true"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:padding="7dp"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btngetstarted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/roundcornerdrawable"
+            android:backgroundTint="@color/appcolor"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Continue"
+            android:textSize="14sp"
+            android:textAllCaps="true" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

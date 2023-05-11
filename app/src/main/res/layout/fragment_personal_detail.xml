@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Fragments.PersonalDetailFragment.PersonalDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_bold"
+            android:text="What's your Location?"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:text="We need your location to show  available \n Restaurants Products"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/buildings" />
+
+
+
+
+
+
+            <Button
+                android:id="@+id/btnalocationaccess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="25dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/roundcornerdrawable"
+                android:backgroundTint="@color/appcolor"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Allow Location access"
+                android:textAllCaps="true"
+                android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tventerlocmanually"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="25dp"
+            android:layout_marginHorizontal="20dp"
+            android:backgroundTint="@color/appcolor"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Enter Location Manually"
+            android:gravity="center"
+            android:textColor="@color/appcolor"
+            android:textAllCaps="true"
+            android:textSize="14sp" />
+
+
+
+
+
+
+</LinearLayout>

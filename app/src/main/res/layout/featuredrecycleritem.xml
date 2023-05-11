@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/lin_restaurant"
+    android:background="@android:color/white">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="40dp"
+        app:cardCornerRadius="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/foodimageslogin">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:background="@drawable/moreroundcornerdrawable"
+                        android:backgroundTint="@color/white"
+                        android:layout_marginLeft="20dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4.5"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="@color/black"/>
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="-0dp"
+                            android:src="@drawable/star"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(25+)"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:padding="10dp"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:gravity="end">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/love"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="McDonald"
+            android:drawableRight="@drawable/verify"
+            android:textColor="@color/black"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_semibold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/scooter"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Free delivery"
+                    android:textColor="@color/greycolor"
+                    android:drawablePadding="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_regular"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/scooter"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10-15 Mins"
+                    android:textColor="@color/greycolor"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_regular"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Burger"
+                    android:textColor="@color/greycolor"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:textAllCaps="true"
+                    android:textSize="14sp"
+                    android:background="@drawable/moreroundcornerdrawable"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#F6F6F6"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chicken"
+                    android:textColor="@color/greycolor"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:textAllCaps="true"
+                    android:textSize="14sp"
+                    android:background="@drawable/moreroundcornerdrawable"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#F6F6F6"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fast food"
+                    android:textColor="@color/greycolor"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:textAllCaps="true"
+                    android:textSize="14sp"
+                    android:background="@drawable/moreroundcornerdrawable"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#F6F6F6"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

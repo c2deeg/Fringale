@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/linearopen"
+    android:background="@android:color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvcategoryname"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1.8"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Recommended (11)"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imgdropdown"
+            android:layout_width="0dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:layout_weight=".15"
+            android:src="@drawable/uparrow" />
+
+    </LinearLayout>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/nestedrecyclerview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+</LinearLayout>

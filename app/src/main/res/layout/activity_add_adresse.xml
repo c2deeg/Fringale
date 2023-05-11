@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Activities.AddAdresseActivity.AddAdresseActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_back_24"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="ADRESSES"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginHorizontal="15dp"
+        app:cardBackgroundColor="#F3F3F3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NOW,SHARE ADRESSES WITH A TAP!"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send exact adress details to anyone using smart links"
+                android:fontFamily="@font/poppins_bold"
+                android:drawableLeft="@drawable/ic_baseline_add_location_alt_24"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="12sp"
+                android:drawablePadding="10dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add reciever phone number while saving the address and forget delivery hassless"
+                android:fontFamily="@font/poppins_bold"
+                android:drawableLeft="@drawable/ic_baseline_add_location_alt_24"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp"
+                android:textSize="12sp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Adresses"
+        android:textColor="@color/grey3"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_margin="20dp"
+        android:textSize="16sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_home_24"
+            app:tint="#F6463E" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:drawablePadding="10dp"
+            android:textSize="22sp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginLeft="10dp"
+            android:drawableRight="@drawable/ic_droparrow"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sector 118 Sahibjada ajit singh"
+        android:textColor="@color/darkgrey"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginHorizontal="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT"
+            android:textColor="@color/appcolor"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DELETE"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/appcolor"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHARE"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/appcolor"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_bold"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvadresses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD NEW ADDRESS"
+        android:textColor="@color/lightgreen"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:padding="15dp"
+        android:background="@drawable/greenroundstroke"
+        android:layout_marginHorizontal="15dp"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Fragments.SearchFragment.SearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundcornerstroke2"
+            android:hint="Search"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:textColorHint="@color/greycolor"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/ic_baseline_search_24"
+            android:drawableTint="@color/greycolor"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Top Categories"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="16sp"/>
+
+
+    </LinearLayout>
+    <GridView
+        android:id="@+id/grdiview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:scrollbars="none" />
+
+</LinearLayout>

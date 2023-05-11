@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Fragments.FringaleFragment.FringaleFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_home_24"
+            app:tint="#F6463E" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="22sp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginLeft="10dp"
+            android:drawableRight="@drawable/ic_droparrow"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imguser"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/rounduser"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvadresses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sector 118 Sahibjada ajit singh"
+        android:textColor="@color/darkgrey"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginHorizontal="20dp"/>
+    <EditText
+        android:id="@+id/etsearchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundcornerstroke2"
+        android:backgroundTint="#EEEEEE"
+        android:hint="Search for restaurants,items or more "
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        android:textColorHint="@color/greycolor"
+        android:singleLine="true"
+        android:drawableRight="@drawable/ic_baseline_search_24"
+        android:drawableTint="@color/greycolor"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:focusable="false"
+        android:padding="10dp"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:weightSum="1">
+        <LinearLayout
+            android:id="@+id/linfood"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:src="@drawable/burgerfoof"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Food"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_medium"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:src="@drawable/instamart"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="Instamart"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:src="@drawable/dineout"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dineout"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_medium"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:src="@drawable/ginnie"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Genie"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_medium"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/foodofferrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="WHAT'S NEW?"
+            android:textColor="@color/black"
+            android:layout_weight="0.4"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_bold"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="WHAT'S NEW?"
+            android:layout_weight="0.4"
+            android:textColor="@color/black"
+            android:visibility="invisible"
+            android:fontFamily="@font/poppins_bold"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="I AD"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:textSize="16sp"
+            android:textColor="#9B9B9B"
+            android:fontFamily="@font/poppins_bold"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/foodcategoriessrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

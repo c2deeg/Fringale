@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fringalesplash1"
+    tools:context=".Activities.SplashActivity2">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="vertical"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food"
+                android:textSize="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instamart"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/grey3"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#9E9E9E"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order from top restaurants"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/grey3"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="end">
+            <Button
+                android:id="@+id/btngetstarted"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Get started"
+                android:textAllCaps="true"
+                android:fontFamily="@font/poppins_bold"
+                android:background="@drawable/roundcornerdrawable4"
+                android:backgroundTint="@color/appcolor"
+                android:layout_marginTop="25dp"
+                android:layout_marginHorizontal="20dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeactivitynavigation"
+    app:startDestination="@id/fringaleFragment">
+
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.app.fringale.Fragments.HomeFragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home"
+        >
+        <action
+            android:id="@+id/action_homeFragment2_to_otpFragment2"
+            app:destination="@id/otpFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.app.fringale.Fragments.SearchFragment.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="com.app.fringale.Fragments.OrdersFragment.OrdersFragment"
+        android:label="fragment_orders"
+        tools:layout="@layout/fragment_orders" >
+        <action
+            android:id="@+id/action_ordersFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment3"
+        android:name="com.app.fringale.Fragments.ProfileFragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment3_to_ordersFragment"
+            app:destination="@id/ordersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpFragment2"
+        android:name="com.app.fringale.Fragments.OtpFragment.OtpFragment"
+        android:label="fragment_otp"
+        tools:layout="@layout/fragment_otp" />
+    <fragment
+        android:id="@+id/fringaleFragment"
+        android:name="com.app.fringale.Fragments.FringaleFragment.FringaleFragment"
+        android:label="fragment_fringale"
+        tools:layout="@layout/fragment_fringale" />
+    <fragment
+        android:id="@+id/foodFragment"
+        android:name="com.app.fringale.Fragments.FoodFragment.FoodFragment"
+        android:label="fragment_food"
+        tools:layout="@layout/fragment_food" />
+    <fragment
+        android:id="@+id/dineOutFragment"
+        android:name="com.app.fringale.Fragments.DineOutFragment.DineOutFragment"
+        android:label="fragment_dine_out"
+        tools:layout="@layout/fragment_dine_out" />
+</navigation>

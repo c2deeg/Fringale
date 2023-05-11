@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Activities.ViewRestaurantsDetailActivity.ViewRestaurantsDetailActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_back" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/moreroundcornerdrawable"
+                        android:backgroundTint="@color/lightgrey"
+                        android:drawableLeft="@drawable/ic_baseline_search_24"
+                        android:drawableTint="@color/appcolor"
+                        android:hint="Search menu"
+                        android:padding="10dp"
+                        android:textColorHint="@color/greycolor" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/circledrawable"
+                        android:backgroundTint="@color/lightgrey"
+                        android:padding="10dp"
+                        android:src="@drawable/menuhorizontal" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundcornerdrawable"
+                android:backgroundTint="@color/lightgrey2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvrestaurantname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Deluxe Dhaba"
+                    android:textColor="@color/black"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/tvdishes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Norht indian ,chinese and south indian"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvlocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:text="Kharar Road ,Mohali"
+                            android:textColor="@color/greycolor" />
+
+                        <TextView
+                            android:id="@+id/tvdeliverytime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="0.7"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="27 min | 2km away"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@color/green"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/tvrating"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableRight="@drawable/ic_baseline_star_24"
+                                    android:drawableTint="@color/white"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:gravity="center"
+                                    android:text="3.8"
+                                    android:textColor="@color/white"
+                                    android:textSize="24sp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tvtotreviews"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center"
+                                android:text="1506"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center"
+                                android:text="Reviews"
+                                android:textColor="@color/greycolor"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/leaf" />
+
+                <TextView
+                    android:id="@+id/tvpureveg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Pure veg"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:id="@+id/linbestseller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/roundcornerstroke">
+                    <TextView
+                        android:id="@+id/tvbestseller"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Bestseller"
+                        android:layout_margin="3dp"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                    <ImageView
+                        android:id="@+id/imgcross"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="2dp"
+                        android:visibility="gone"
+                        app:tint="@color/red"
+                        android:src="@drawable/cross"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linfourrating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/roundcornerstroke">
+                    <TextView
+                        android:id="@+id/tvfourrating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Rating4+"
+                        android:layout_margin="3dp"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                    <ImageView
+                        android:id="@+id/imgcross2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="2dp"
+                        android:visibility="gone"
+                        android:src="@drawable/cross"/>
+                </LinearLayout>
+
+
+
+
+
+                <!--                <TextView-->
+<!--                    android:id="@+id/tvratingfour"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="23dp"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:layout_weight="1.4"-->
+<!--                    android:background="@drawable/roundcornerstroke"-->
+<!--                    android:gravity="center"-->
+<!--                    android:padding="2dp"-->
+<!--                    android:text="Rating 4.0+"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="12sp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="23dp"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:layout_weight="1.4"-->
+<!--                    android:background="@drawable/roundcornerstroke"-->
+<!--                    android:gravity="center"-->
+<!--                    android:padding="2dp"-->
+<!--                    android:text="Lunch"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="12sp" />-->
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fooditemscategoriesrecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tvbrowsemenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Browse Menu"
+            android:gravity="center"
+            android:background="@drawable/roundcornerdrawable4"
+            android:drawableLeft="@drawable/ic_baseline_restaurant_menu_24"
+            android:drawablePadding="5dp"
+            android:backgroundTint="#FFAA7B"
+            android:padding="5dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/InnerRelativeLayout"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp"
+        android:paddingLeft="5dp"
+        android:visibility="invisible"
+        android:background="@color/appcolor"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="#ffff"
+            android:id="@+id/rateview"
+            android:textSize="18dp"
+            android:layout_marginRight="10dp"
+            android:text="Total Amount : INR 600"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:text="Checkout"
+            android:padding="10dp"
+            android:textColor="#000"/>
+    </LinearLayout>
+
+</RelativeLayout>

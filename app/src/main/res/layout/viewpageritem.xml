@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!-- image viwer to view the images -->
+    <ImageView
+        android:id="@+id/imageViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/walkthroughscreen1img"/>
+    <TextView
+        android:id="@+id/tvtext1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All your favourites"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_bold"/>
+    <TextView
+        android:id="@+id/tvtext2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order from the best local restaurants \n with easy ,on-demand delivery"
+        android:textColor="@color/greycolor"
+        android:textSize="16sp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_regular"/>
+</LinearLayout>
